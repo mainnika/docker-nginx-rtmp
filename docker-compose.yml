@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  rtmp:
+    build:
+      context: .
+    volumes:
+      - "./hls:/hls"
+    expose:
+      - "80"
+      - "1935"
